@@ -1,0 +1,3 @@
+const isPluginInstalled = (configPlugins: any, plugin: any) => configPlugins.some(({ package: configPlugin }: any) => configPlugin === plugin);
+export const getRecommendPlugins = (frameworkPlugins: any, config: any) => frameworkPlugins.filter((plugin: any) => !isPluginInstalled(config.plugins, plugin));
+export const getUIPlugins = (configPlugins: any) => configPlugins.filter(({ origin }: any) => origin === 'ui').map(({ package: pkg }: any) => ({ package: pkg }));

@@ -1,0 +1,43 @@
+*-debug.log
+*-error.log
+/dist
+/tmp
+node_modules
+!**/__fixtures__/**/node_modules
+misc
+coverage
+.idea
+.vscode
+!.vscode/launch.json
+.github/styles
+.yarn
+!.yarn/releases
+.yarnrc.yml
+.npmrc
+
+# node sdk
+vendor
+
+# osx
+.DS_STORE
+
+# Local Cloudpath folder
+/.cloudpath
+
+# site
+test-site
+site/dist
+site-cra
+site/src/**/*.md
+!site/src/register-addon.md
+!site/src/register-addon-thanks.md
+
+# tests
+.verdaccio-storage
+.eslintcache
+_test_out/**
+*.crt
+*.key
+
+yarn.lock
+package-json.lock
